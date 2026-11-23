@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b20">
+  <meta name="description" content="Un pequeño universo lleno de recuerdos y cariño.">
+  <title>Un universo para ti ✨</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cieloEstrellado"></div>
+  <div class="nebulosa nebulosa-uno"></div>
+<div class="nebulosa nebulosa-dos"></div>
+  <main class="experiencia">
+        <div id="lluviaEstrellas"></div>
+    <!-- 1. Pantalla de bienvenida -->
+    <section id="inicio" class="pantalla-inicio">
+      <div class="contenido-inicio">
+        <div class="icono-inicio" aria-hidden="true">✦</div>
+        <p class="ceja">UNA SORPRESA SOLO PARA TI</p>
+       <h1>Hay millones de estrellas, <em>pero tú eres mi favorita.</em></h1>
+    
+       <p class="introduccion">Porque algunas personas hacen que hasta la noche más oscura se llene de estrellas.</p>
+        <button id="comenzar" class="boton-principal" type="button">Entrar a nuestro universo <span aria-hidden="true">↗</span></button>
+        <button id="botonSorpresa">
+          ❤️ Una pequeña sorpresa
+          </button>
+          <div id="sorpresaRomantica" class="sorpresa-oculta">
+         <div class="corazon">❤️</div>
+         <p>Eres mi estrella favorita en todo el universo.</p>
+         </div>
+        <p class="firma">Hecho con cariño, estrella por estrella.</p>
+      </div>
+    </section>
+
+    <!-- 2. El cielo que crearemos con JavaScript -->
+    <section id="universo" class="universo oculto" aria-label="Universo de recuerdos">
+      <header class="encabezado">
+        <p class="ceja">NUESTRO PEQUEÑO INFINITO</p>
+        <h2>Hay estrellas que cuentan historias.</h2>
+        <p>Toca las seis estrellas brillantes y descubre lo que guardé en ellas.</p>
+      </header>
+
+      <div id="cielo" class="cielo">
+        <div class="orbita orbita-uno" aria-hidden="true"></div>
+        <div class="orbita orbita-dos" aria-hidden="true"></div>
+        <div class="resplandor-central" aria-hidden="true">✧</div>
+        <!-- JavaScript pondrá aquí las estrellas -->
+      </div>
+
+      <footer class="pie">
+        <span id="progreso" aria-live="polite">0 de 6 estrellas descubiertas</span>
+        <button id="mostrarFinal" class="boton-principal boton-final oculto" type="button">Descubrir la sorpresa final ♥</button>
+      </footer>
+    </section>
+
+    <!-- 3. Tarjeta que aparece al tocar una estrella -->
+    <div id="modal" class="modal oculto" role="dialog" aria-modal="true" aria-labelledby="tituloRecuerdo">
+      <article class="tarjeta-recuerdo">
+        <button id="cerrar" class="boton-cerrar" type="button" aria-label="Cerrar recuerdo">×</button>
+        <div id="simboloRecuerdo" class="simbolo-recuerdo" aria-hidden="true">✦</div>
+        <p id="numeroRecuerdo" class="ceja"></p>
+        <h3 id="tituloRecuerdo"></h3>
+        <img
+    id="fotoRecuerdo"
+    class="foto-recuerdo oculto"
+    alt="Fotografía de un recuerdo especial"
+>
+        <p id="textoRecuerdo" class="mensaje-recuerdo"></p>
+        <button id="seguir" class="boton-secundario" type="button">Seguir explorando</button>
+      </article>
+    </div>
+
+    <!-- 4. Sorpresa desbloqueada después de ver las cinco estrellas -->
+    <section id="pantallaFinal" class="pantalla-final oculto" aria-labelledby="tituloFinal">
+      <div class="contenido-final">
+        <div class="corazon" aria-hidden="true">♥</div>
+        <p class="ceja">EL SECRETO DE ESTE UNIVERSO</p>
+        <h2 id="tituloFinal">Entre millones de posibilidades, <em>te elegiría a ti.</em></h2>
+        <p id="dedicatoria">Gracias por existir y por hacer que tantos momentos pequeños se conviertan en recuerdos enormes.</p>
+       <button id="abrirCarta" type="button">
+    <span id="iconoSobre" aria-hidden="true">✉️</span>
+    Tengo algo más que decirte...
+      </button>
+        <div id="cartaRomantica" class="carta-romantica oculto">
+
+    <p class="ceja">UNA ÚLTIMA COSA...</p>
+
+    <p id="textoCarta">
+
+    Hola, mi niña hermosa. ❤️
+    <br><br>
+
+    Sé que últimamente no he podido consentirte tanto como sé
+    que te mereces, pero créeme que siempre quiero encontrar
+    la manera de hacerte sonreír. Y fue precisamente de ese
+    deseo de donde nació esta pequeña sorpresa.
+
+    <br><br>
+
+    Quiero que sepas lo importante que eres para mí y lo
+    mucho que significas en mi vida.
+
+    <br><br>
+
+    Este universo que estás viendo no es solamente una página
+    llena de estrellas, fotografías y recuerdos. Es una pequeña
+    representación de todo lo bonito que hemos vivido y,
+    sobre todo, de todo lo que todavía nos falta por vivir.
+
+    <br><br>
+
+    Porque mi idea es que este universo nunca deje de crecer.
+    Que, con el tiempo, podamos agregar muchas más estrellas,
+    una por cada aventura, cada sonrisa, cada viaje y cada
+    pequeño momento que compartamos de aquí en adelante.
+
+    <br><br>
+
+    Quiero que sepas que te quiero con todo mi corazón y que
+    haré todo lo que esté en mis manos para hacerte la mujer
+    más feliz del mundo.
+
+    <br><br>
+
+    Porque contigo he aprendido que no necesitamos hacer
+    cosas extraordinarias para vivir momentos inolvidables.
+    A veces, cualquier pequeño instante a tu lado termina
+    convirtiéndose en una gran aventura.
+
+    <br><br>
+
+    Espero que te guste este pequeño regalo, mi amor.
+    Lo hice pensando en ti, en nosotros y en todos esos
+    recuerdos que todavía nos esperan.
+
+    <br><br>
+
+    Y espero que puedas volver a abrir este universo cada
+    vez que quieras, para recordar lo mucho que te quiero
+    y lo especial que eres para mí.
+
+    <br><br>
+
+    Porque este universo tiene millones de estrellas,
+    pero mi favorita siempre serás tú. ✨
+
+    <br><br>
+
+    Te quiero demasiado, mi niña hermosa. ❤️
+
+</p>
+
+</div>
+        <button id="volver" class="boton-secundario" type="button">Volver a las estrellas ↶</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

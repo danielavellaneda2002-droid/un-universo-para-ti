@@ -1,0 +1,22 @@
+UN UNIVERSO PARA TI
+==================
+
+1. Extrae la carpeta y ábrela en Visual Studio Code.
+2. Verifica que index.html, styles.css y script.js estén en la MISMA carpeta.
+3. Abre index.html en el navegador (doble clic) o utiliza la extensión Live Server.
+4. Pulsa "Entrar a nuestro universo".
+5. Toca las cinco estrellas. Al verlas todas, aparece la sorpresa final.
+
+PERSONALIZACIÓN:
+- script.js, al principio: cambia los títulos y mensajes del arreglo 'recuerdos'.
+- script.js: cambia x e y para cambiar la posición de cada estrella.
+- index.html: busca 'Te hice un' para cambiar el título de bienvenida.
+- index.html: busca 'Entre millones' y 'Gracias por existir' para personalizar el final.
+- styles.css: cambia --rosa, --lila o --fondo para ajustar los colores.
+
+APRENDE:
+- HTML define el contenido.
+- CSS define el estilo y las animaciones.
+- JavaScript crea las estrellas y responde a las pulsaciones.
+
+Proyecto hecho con tecnologías web estándar, sin dependencias y listo para publicar en GitHub Pages.
